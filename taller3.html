@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DEPORTES</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #contenido{
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid rgb(212, 27, 27);
+            border-radius: 15px;
+            padding: 80px;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(201, 224, 213);
+        }
+        h1{
+            width: 100%;
+            font-size: 70px;
+            text-align: center;
+            margin: 0px;
+        }
+        #linea-horizontal {
+            width: 100%;
+            color: black;
+            padding: 0px;
+            margin: 0px;
+        }
+        #linea-horizontal2 {
+            width: 100%;
+            color: black;
+            padding: 0px;
+            margin: 0px;
+        }
+        #linea-horizontal3 {
+            width: 100%;
+            color: black;
+            padding: 0px;
+            margin: 0px;
+        }
+        #contenedor-menu{
+            display: flex;
+            justify-content: center;
+        }
+        #logo{
+            margin: 0px 5px;
+            display: flex;
+            height: 60px;
+            width: 60px;
+            justify-content: center;
+        }
+        #logo1{
+            margin: auto;
+            width: 80px;
+            height: 50px;
+        }
+        #nav1{
+            display: flex;
+            justify-content: center;
+            color: white;
+            width: 100%;
+        }
+        #menu{
+            display: flex;
+            list-style: none;
+        }
+        .li-menu{
+            padding-top: 2px;
+            margin-right: 110px;
+        }
+        #menu-noticias{
+            margin-left: 20px;
+        }
+        .a-menu{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 1px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #main{
+            display: flex;
+            width: 100%;
+        }
+        #main-section{
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+        }
+        #h2-subtitulos1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            width: 100%;
+            margin: 0px;
+        }
+        #linea-horizontal-section{
+            width: 95%;
+            color: black;
+            padding: 0px;
+            margin: 0px auto;
+        }
+        #linea-horizontal-section2{
+            width: 95%;
+            color: black;
+            padding: 0px;
+            margin: 0px auto;
+        }
+        #linea-horizontal-section3{
+            width: 95%;
+            color: black;
+            padding: 0px;
+            margin: 0px auto;
+        }
+        #article1{
+            display: flex;
+        }
+        #img-nacio{
+            width: 300px;
+            margin: 5px;
+        }
+        #article1-noticias{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #article1-titulo{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        #article1-parrafo{
+            text-align: justify;
+        }
+
+        #article2{
+            display: flex;
+        }
+        #h2-subtitulos2{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            width: 100%;
+            margin: 0px;
+        }
+        #img-inter{
+            width: 300px;
+            height: 197px;
+            margin: 5px;
+        }
+        #article2-noticias{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #article2-titulo{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        #article2-parrafo{
+            text-align: justify;
+        }
+        #article3{
+            display: flex;
+        }
+        #img-dep-nacio{
+            width: 300px;
+            margin: 5px;
+        }
+        #article3-deportes{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #article3-titulo{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        #article3-parrafo{
+            text-align: justify;
+        }
+        #article4{
+            display: flex;
+        }
+        #img-dep-inter{
+            width: 300px;
+            height: 197px;
+            margin: 5px;
+        }
+        #article4-deportes{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #article4-titulo{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        #article4-parrafo{
+            text-align: justify;
+        }
+        #aside{
+            width: 20%;
+            height: 980px;
+            border-left: 1px solid rgb(158, 148, 148);
+        }
+        #h3-publicidad{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            margin: 17px 0px;
+        }
+        #linea-horizontal-aside{
+            width: 95%;
+            color: black;
+            padding: 0px;
+            margin: 0px auto;
+        }
+        #linea-horizontal-aside2{
+            width: 95%;
+            color: black;
+            padding: 0px;
+            margin: 0px auto;
+        }
+        #nav2{
+            display: flex;
+            justify-content: center;
+            color: rgb(3, 3, 3);
+            width: 100%;
+            height: 450px;
+        }
+        #nav2-sitios{
+            margin: 50px 0px;
+        }
+        .links-exteriores{
+            margin-top: 40px;
+        }
+        .a-sitios{
+            color: rgb(2, 2, 24);
+            text-decoration: none;
+            padding: 1px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #section3{
+            display: flex;
+            width: 100%;
+        }
+        #figure-publicidad{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0px;
+            margin-left: 10px;
+        }
+        #img-publicidad{
+            margin: 0px;
+            padding: 0px;
+            width: 220px;
+            height: 320px;
+        }
+        figcaption{
+            display: flex;
+            margin: 10px auto;
+            font-size: 20px;
+            font-weight: bold; 
+        }
+        #footer{
+            display: flex;
+            width: 100%;
+        }
+        .contenedor-dividir{
+            border-right: 1px solid rgb(158, 148, 148);
+        }
+        .footer-div{
+            margin: 10px;
+        }
+        .footer-titulo{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .footer-parrafo{
+            font-size: 20px;
+            text-align: justify;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <header id="header">
+            <h1>Deportes</h1>
+            <hr id="linea-horizontal">
+            <div id="contenedor-menu">
+                <div id="logo">
+                    <img src="logo.jpeg" alt="logo de la empresa" id="logo1">
+                </div>
+                <nav id="nav1">
+                    <ul id="menu">
+                        <li id="menu-futbol" class="li-menu"><a href="#section1" class="a-menu">KARATE</a></li>
+                        <li id="menu-tenis" class="li-menu"><a href="#section2" class="a-menu">BOXEO</a></li>
+                        <li id="menu-boxeo" class="li-menu"><a href="#aside" class="a-menu">TENIS</a></li>
+                        <li id="menu-karate" class="li-menu"><a href="#footer" class="a-menu">FUTBOL</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr id="linea-horizontal2">
+        <main id="main">
+            <div id="main-section">
+                <section id="section1">
+                    <h2 id="h2-subtitulos1">deportes de contacto</h2>
+                    <hr id="linea-horizontal-section">
+                    <article id="article1">
+                        <div id="img-article1">
+                            <img src="karate.jpeg" alt="trabajadores" id="img-nacio">
+                        </div>
+                        <div id="article1-noticias">
+                            <h2 id="article1-titulo">Karate</h2>
+                            <p id="article1-parrafo"> El karate es un arte marcial japonés que utiliza técnicas de golpeo con manos, pies, codos y rodillas, así como de bloqueo y agarre, con el objetivo de desarrollar la disciplina física y mental. </p> 
+                        </div>
+                    </article>
+                    <article id="article2">
+                        <div id="img-article2">
+                            <img src="boxeo.jpeg" alt="Soldados en listados" id="img-inter">
+                        </div>
+                        <div id="article2-noticias">
+                            <h2 id="article2-titulo">BOXEO</h2>
+                            <p id="article2-parrafo"> El boxeo es una forma de combate cuerpo a cuerpo sin armas en el que un deportista intenta conectar golpes en la cabeza o el cuerpo (por encima de la altura de la cintura) de su oponente para sumar puntos (según decidan los jueces) o conseguir que dicho oponente no pueda continuar.</p> 
+                        </div>
+                    </article>
+                    </section>
+                <hr id="linea-horizontal-section2">
+                <section id="section2">
+                    <h2 id="h2-subtitulos2">Deportes de uno o mas jugadores </h2>
+                    <hr id="linea-horizontal-section3">
+                    <article id="article3">
+                        <div id="img-article3">
+                            <img src="tenis.jpeg" alt="jugando al tejo" id="img-dep-nacio">
+                        </div>
+                        <div id="article3-deportes">
+                            <h2 id="article3-titulo">TENIS</h2>
+                            <p id="article3-parrafo">El tenis es un deporte de raqueta que se juega entre dos jugadores (individual) o dos parejas (dobles) en una cancha rectangular dividida por una red. El objetivo es golpear una pelota con una raqueta para que cruce la red y caiga en el área del oponente, quien debe devolverla. </p> 
+                        </div>
+                    </article>
+                    <article id="article4">
+                        <div id="img-article4">
+                            <img src="futbol.png" alt="Karateca japon" id="img-dep-inter">
+                        </div>
+                        <div id="article4-deportes">
+                            <h2 id="article4-titulo">FUTBOL</h2>
+                            <p id="article4-parrafo"> El fútbol es un deporte de equipo en el que dos equipos de 11 jugadores compiten para marcar más goles que el rival. El objetivo principal es introducir un balón en la portería contraria sin usar las manos ni los brazos (excepto el portero dentro de su área). El equipo con más goles al final del partido gana. </p> 
+                        </div>
+                        </article>
+                </section>
+            </div>
+            <aside id="aside">
+                <h3 id="h3-publicidad">Otros sitios:</h3>
+                <hr id="linea-horizontal-aside">
+                <nav id="nav2">
+                    <ul id="nav2-sitios">
+                        <li id="ir-google" class="links-exteriores"><a href="https://www.google.com" class="a-sitios">Ir a google</a></li>
+                        <li id="ir-facebook" class="links-exteriores"><a href="https://www.facebook.com" class="a-sitios">Ir a facebook</a></li>
+                    </ul>
+                </nav>
+                <hr id="linea-horizontal-aside2">
+                <div id="section3">
+                        <figure id="figure-publicidad">
+                            <img src="disney.jpeg" alt="Botella de cocacola" id="img-publicidad">
+                            <figcaption> </figcaption>
+                        </figure>
+                        </div>
+            </aside>
+        </main>
+        <hr id="linea-horizontal3">
+        <footer id="footer">
+            <div class="contenedor-dividir">
+                <div id="footer1" class="footer-div">
+                    <h3 class="footer-titulo">Información 1</h3>
+                    <p class="footer-parrafo">El deporte es crucial para la salud física, mental y social, contribuyendo a prevenir enfermedades, mejorar el bienestar general y fomentar la socialización. Reduce el riesgo de enfermedades cardiovasculares, mejora la salud mental y fomenta la autoconfianza. </p>
+                </div>
+            </div>
+            <div class="contenedor-dividir">
+                <div id="footer2" class="footer-div">
+                    <h3 class="footer-titulo">Información 2</h3>
+                    <p class="footer-parrafo">El deporte es crucial para la salud física, mental y social, contribuyendo a prevenir enfermedades, mejorar el bienestar general y fomentar la socialización. Reduce el riesgo de enfermedades cardiovasculares, mejora la salud mental y fomenta la autoconfianza. </p>
+                </div>
+            </div>
+            <div class="contenedor-dividir">
+                <div id="footer3" class="footer-div">
+                    <h3 class="footer-titulo">Información 3</h3>
+                    <p class="footer-parrafo">El deporte es crucial para la salud física, mental y social, contribuyendo a prevenir enfermedades, mejorar el bienestar general y fomentar la socialización. Reduce el riesgo de enfermedades cardiovasculares, mejora la salud mental y fomenta la autoconfianza. </p>
+                </div>
+            </div>
+            <div class="contenedor-dividir2">
+                <div id="footer4" class="footer-div">
+                    <h3 class="footer-titulo">Información 4</h3>
+                    <p class="footer-parrafo">El deporte es crucial para la salud física, mental y social, contribuyendo a prevenir enfermedades, mejorar el bienestar general y fomentar la socialización. Reduce el riesgo de enfermedades cardiovasculares, mejora la salud mental y fomenta la autoconfianza. </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        
+
+
+
+   
+
+
+</body>
+</html>
